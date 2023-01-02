@@ -52,7 +52,7 @@ function getStringLength(value) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-  return `Hello, ${firstName} ${lastName}!`
+  return `Hello, ${firstName} ${lastName}!`;
 }
 
 /**
@@ -66,7 +66,7 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-  const name = value.split(',')[1].trim()
+  const name = value.split(',')[1].trim();
   return name.slice(0, name.length - 1);
 }
 
@@ -130,8 +130,8 @@ function repeatString(value, count) {
 function removeFirstOccurrences(str, value) {
   const index = str.indexOf(value);
   const startStr = str.slice(0, index);
-  const endStr = str.slice(index + value.length)
-  return  `${startStr}${endStr}`;
+  const endStr = str.slice(index + value.length);
+  return `${startStr}${endStr}`;
 }
 
 /**
@@ -146,7 +146,7 @@ function removeFirstOccurrences(str, value) {
  *   '<a>' => 'a'
  */
 function unbracketTag(str) {
-  return str.slice(1, str.length - 1)
+  return str.slice(1, str.length - 1);
 }
 
 
